@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Karan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scenes -->
+    <div class="container">
+        <!-- Intro Scene - Mobile Optimized -->
+        <div id="intro" class="scene active">
+            <div class="bg-animation" id="intro-bg"></div>
+            <div class="intro-content">
+                <div class="handwriting" id="handwriting-text"></div>
+                <div class="intro-subtitle">A special celebration for an amazing person</div>
+            </div>
+        </div>
+
+        <!-- Chat Scene -->
+        <div id="chat" class="scene">
+            <div class="bg-animation" id="chat-bg"></div>
+            <div class="chat-container">
+                <div class="chat-header">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </div>
+                <div class="chat-messages" id="chat-messages">
+                    <div class="typing-indicator">
+                        <div class="typing-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Transition Scene -->
+        <div id="transition" class="scene">
+            <div class="bg-animation" id="transition-bg"></div>
+            <div class="typewriter" id="typewriter-text"></div>
+            <button class="continue-btn" id="continue-btn">Let's Continue</button>
+        </div>
+
+        <!-- Main Website -->
+        <div id="main-website" class="scene">
+            <div class="bg-animation" id="main-bg"></div>
+            
+            <!-- Step 1: Birthday Message -->
+            <div id="step1" class="step active">
+                <h2 class="step-title">Happy Birthday Karan!</h2>
+                <div class="step-content">
+                    <p>On this special day, I wish you all the happiness, success, and joy in the world.</p>
+                    <p>May your life be filled with wonderful moments, cherished memories, and dreams that come true.</p>
+                    <p>You deserve the very best today and always!</p>
+                </div>
+                <div class="balloons">
+                    <div class="balloon"></div>
+                    <div class="balloon"></div>
+                    <div class="balloon"></div>
+                </div>
+                <div id="confetti-container"></div>
+            </div>
+
+            <!-- Step 2: Born in 2004 -->
+            <div id="step2" class="step">
+                <h2 class="step-title">A Legend Was Born</h2>
+                <div class="step-content">
+                    <p>In 2004, something extraordinary happened...</p>
+                </div>
+                
+                <div class="legend-section">
+                    <div class="legend-text">A legend was born and they named him Karan</div>
+                </div>
+                
+                <div class="year-timeline">
+                    <div class="year-item">
+                        <div class="year-number">2004</div>
+                        <div class="year-content">
+                            <p>The year <span class="year-highlight">Facebook was founded</span> and <span class="year-highlight">Gmail was launched</span>.</p>
+                            <p>But the most important event was the birth of a legend - <span class="year-highlight">Karan</span>!</p>
+                        </div>
+                    </div>
+                    <div class="year-item">
+                        <div class="year-number">Now</div>
+                        <div class="year-content">
+                            <p>That legend has grown into an amazing person who brings joy to everyone around him.</p>
+                            <p>Your journey has been remarkable, and the best is yet to come!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="blessing-text">
+                    <p>You're destined for greatness, Baabu!</p>
+                </div>
+            </div>
+
+            <!-- Step 3: Blow the Candle -->
+            <div id="step3" class="step">
+                <h2 class="step-title">Make a Wish!</h2>
+                <div class="step-content">
+                    <p>It's time to blow out the candle and make a wish!</p>
+                </div>
+                <div class="cake-container">
+                    <div class="cake">
+                        <div class="cake-top"></div>
+                        <div class="cake-base"></div>
+                        <div class="candle"></div>
+                        <div class="flame" id="candle-flame"></div>
+                    </div>
+                </div>
+                <button class="blow-btn" id="blow-btn">Blow the Candle</button>
+            </div>
+
+            <!-- Step 4: Modern Wish Grid -->
+            <div id="step4" class="step">
+                <h2 class="step-title">What I Wish for You 🎁</h2>
+                <div class="step-content">
+                    <p>These are the things I truly wish for you this year — from my heart. May you receive them all. 💫</p>
+                </div>
+                <div class="wish-grid">
+                    <div class="wish-item" data-wish="happiness">
+                        <div class="wish-icon">
+                            <i class="fas fa-laugh-beam"></i>
+                        </div>
+                        <div class="wish-text">Happiness</div>
+                    </div>
+                    <div class="wish-item" data-wish="success">
+                        <div class="wish-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="wish-text">Success</div>
+                    </div>
+                    <div class="wish-item" data-wish="health">
+                        <div class="wish-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="wish-text">Good Health</div>
+                    </div>
+                    <div class="wish-item" data-wish="adventure">
+                        <div class="wish-icon">
+                            <i class="fas fa-hiking"></i>
+                        </div>
+                        <div class="wish-text">Adventure</div>
+                    </div>
+                    <div class="wish-item" data-wish="love">
+                        <div class="wish-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="wish-text">Love</div>
+                    </div>
+                    <div class="wish-item" data-wish="growth">
+                        <div class="wish-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <div class="wish-text">Personal Growth</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Page -->
+            <div id="step5" class="step">
+                <div class="final-message">Happy Birthday Karan!</div>
+                <div class="step-content">
+                    <p>I hope this little surprise brought a smile to your face.</p>
+                    <p>Wishing you an amazing year ahead filled with joy, success, and wonderful moments.</p>
+                </div>
+                <div class="envelope-container">
+                    <div class="envelope" id="envelope">
+                        <div class="envelope-front">
+                            <div class="envelope-flap"></div>
+                            <i class="fas fa-heart" style="font-size: 1.8rem; color: white;"></i>
+                        </div>
+                        <div class="envelope-back">
+                            <div class="envelope-content">
+                                With lots of love<br>— from Wardhan 💙
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="navigation">
+                <button class="nav-btn" id="prev-btn" disabled>Previous</button>
+                <button class="nav-btn" id="next-btn">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
